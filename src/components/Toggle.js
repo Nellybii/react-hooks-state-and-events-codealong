@@ -7,9 +7,10 @@ function Toggle() {
   function handleClick() {
     setIsOn((isOn) => !isOn);
   }
+  const color = isOn ? "red" : "white"
   // use state variable in the component
   return (
-    <button onClick={handleClick} style={{ background: "red" }}>
+    <button style={{ background: color}} onClick={handleClick}>
       {isOn ? "ON" : "OFF"}
     </button>
   );
